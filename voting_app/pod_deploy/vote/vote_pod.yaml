@@ -7,4 +7,6 @@ metadata:
 spec:
   containers:
     - name: vote-cont
-      image: dockersamples/
+      image: dockersamples/examplevotingapp_vote
+      ports:
+        - containerPort: 80
