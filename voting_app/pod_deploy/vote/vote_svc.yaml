@@ -6,6 +6,8 @@ metadata:
     svcinfo: svc-vote
 
 spec:
+  selector:
+    podinfo: pod-vote
   type: NodePort
   ports:
     - port: 80
