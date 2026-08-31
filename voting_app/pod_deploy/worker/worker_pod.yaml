@@ -1,0 +1,11 @@
+apiVersion: v1
+kind: pod
+metadata:
+  name: worker
+  labels:
+    podinfo: pod-worker
+spec:
+  containers:
+    - name: worker-cont
+      image: dockersamples/examplevotingapp_worker
+
