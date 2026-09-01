@@ -18,10 +18,10 @@ spec:
       labels:
         podinfo: pod-redis
 
-      spec:
-        containers:
-          - name: redis-cont
-            image: redis:alpine
+    spec:
+      containers:
+        - name: redis-cont
+          image: redis:alpine
 
-          - ports:
-              containerPort: 6379
+        - ports:
+            containerPort: 6379
