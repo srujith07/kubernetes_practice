@@ -6,7 +6,7 @@ metadata:
     depinfo: dep-db
 spec:
   selector:
-    matchLabel:
+    matchLabels:
       podinfo: pod-db
   replicas: 3
 
