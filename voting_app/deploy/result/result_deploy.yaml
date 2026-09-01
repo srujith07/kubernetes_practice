@@ -1,0 +1,22 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: res-dep
+  labels:
+    depinfo: dep-res
+
+spec:
+  selector:
+    matchLabel:
+      podinfo: pod-res
+
+  template:
+    metadata:
+      name: res-pod
+      labels:
+        podinfo: pod-res
+      containers:
+        - name: res-cont
+          image: dockersamples/examplevotingapp_result
+          ports:
+            - containerPort: 80

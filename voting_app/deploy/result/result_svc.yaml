@@ -1,0 +1,15 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: res-svc
+  labels:
+    svcinfo: svc-res
+spec:
+  selector:
+    podinfo: pod-res
+
+  type: Nodeport
+  ports:
+    - port: 80
+      targetPort: 80
+      nodePort: 30005
