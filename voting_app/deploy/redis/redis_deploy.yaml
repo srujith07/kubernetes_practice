@@ -13,11 +13,10 @@ spec:
   replicas: 3
 
   template:
-    spec:
-      metadata:
-        name: redis-pod
-        labels:
-          podinfo: pod-redis
+    metadata:
+      name: redis-pod
+      labels:
+        podinfo: pod-redis
 
       spec:
         containers:
