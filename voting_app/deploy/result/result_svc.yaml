@@ -8,7 +8,7 @@ spec:
   selector:
     podinfo: pod-res
 
-  type: Nodeport
+  type: NodePort
   ports:
     - port: 80
       targetPort: 80

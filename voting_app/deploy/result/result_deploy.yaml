@@ -15,6 +15,7 @@ spec:
       name: res-pod
       labels:
         podinfo: pod-res
+    spec:
       containers:
         - name: res-cont
           image: dockersamples/examplevotingapp_result
